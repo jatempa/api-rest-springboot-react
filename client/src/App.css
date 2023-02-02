@@ -4,12 +4,12 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-}
-
-body {
   padding: 0;
   margin: 0;
+}
+
+:root {
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 .App {
