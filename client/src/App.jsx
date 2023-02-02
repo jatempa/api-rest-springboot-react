@@ -7,8 +7,12 @@ function App() {
   const [movies, setMovies] = useState();
 
   const getMovies = async () => {
-    const response = await api.get('api/v1/movies');
-    console.log(response.data);
+    try {
+      const response = await api.get('api/v1/movies');
+      setMovies(response.data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
