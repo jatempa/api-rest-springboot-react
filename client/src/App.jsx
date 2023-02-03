@@ -4,6 +4,7 @@ import './App.css';
 import api from './api/axiosConfig.js';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
+import Header from './components/Header';
 import Home from './components/Home';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Header />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route path='/' element={<Home movies={movies} />}></Route>
