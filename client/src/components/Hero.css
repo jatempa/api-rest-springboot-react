@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-.movie-button-container {
+.movie-buttons-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,14 +60,6 @@
   width: 150px;
 }
 
-.play-button-icon {
-  padding: 0px;
-  margin: 0px;
-  color: gold;
-  font-size: 3rem;
-  transition: 0.3s;
-  cursor: pointer;
-}
 .play-button-icon {
   padding: 0px;
   margin: 0px;
