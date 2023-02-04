@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Trailer from './components/Trailer';
 import Reviews from './components/Reviews';
+import NotFound from './components/NotFound';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -56,6 +57,7 @@ function App() {
               />
             }
           ></Route>
+          <Route path='*' element={<NotFound />}></Route>
         </Route>
       </Routes>
     </div>
